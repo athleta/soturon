@@ -1,0 +1,341 @@
+@charset "UTF-8";
+body {
+ line-height: 1.7;
+ font-size: 16px;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ color: #000;
+}
+.menyu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menyu ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.menyu ul > li {
+  float: left;
+  position: relative;
+  width: 16.66666%;
+  box-sizing: border-box;
+}
+.menyu ul li a {
+  display: block;
+  padding: .4em .8em;
+  text-decoration: none;
+  color: #333;
+  background: rgb(255, 254, 241);
+  text-align: center;
+}
+.menyu ul li a:hover {
+  background: #eee;
+}
+.menyu ul > li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+.menyu ul > li li {
+  float: none;
+  width: 100%;
+}
+.menyu ul li:hover ul {
+  display: block;
+}
+
+.abouthome :link {
+  color: #3585b7;
+}
+.abouthome :visited {
+  color: #6252B7
+}
+.abouthome :hover {
+  text-decoration: none;
+  color: #555;
+}
+
+.home h1{
+  /*線の種類（実線） 太さ 色*/
+  border-bottom: double 5px #FFC778;
+}
+header h1{
+  border-bottom: double 5px #FFC778;
+}
+
+header .mondainonamae {
+    padding: 0.5em;/*文字周りの余白*/
+    color: #494949;/*文字色*/
+    background: #fffaf4;/*背景色*/
+    border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+
+}
+
+
+main .title {
+  padding: 50px;
+  background: #f4e3e3;
+}
+main .title h1 {
+  margin: 0;
+  line-height: 1;
+  font-size:45px;
+  color: #7f6666;
+}
+main .title ol {
+  list-style-type: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: flex;
+}
+main .title ol li {
+  font-size: 13px;
+}
+main .title ol li::after {
+  content: ">";
+  margin: 0 5px 0 10px;
+}
+main .title ol li:last-child::after {
+  content: none;
+}
+
+.mondai2 {
+  display: flex;
+}
+
+#modal-content {
+	width: 70% ;
+	margin: 0 ;
+	padding: 10px 20px ;
+	border: 2px solid #aaa ;
+	background: #fff ;
+	position: fixed ;
+	display: none ;
+	z-index: 2 ;
+}
+
+#modal-overlay {
+	z-index: 1 ;
+	display: none ;
+	position: fixed ;
+	top: 0 ;
+	left: 0 ;
+	width: 100% ;
+	height: 120% ;
+	background-color: rgba( 0,0,0, 0.75 ) ;
+}
+
+
+
+#modal-open,
+#modal-close {
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 12px;
+  margin: 16px auto 0;
+  background: #4caf50;
+  color: white;
+}
+
+
+.aboutzyunban {
+  background: transparent;
+  padding: .4em .8em;
+  margin: 0 0 1em;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  border-left: .2083em solid #2196F3;
+  border-bottom: .084em dotted #eee;
+  text-align: left;
+}
+
+.dateList dl{
+ width:1000px;
+}
+.dateList dt{
+ border-bottom:1px solid #ccc;
+  float:left;
+  padding:1px 5px;
+}
+.dateList dd{
+ border-bottom:1px solid #ccc;
+  margin-left:100px;
+  padding:1px 5px;
+}
+
+.microSite {
+  background: transparent;
+  padding: .4em;
+  margin: 0 0 1em;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: .125em solid #2196F3;
+  text-align: left;
+}
+.microSitecenter {
+  background: transparent;
+  padding: .4em;
+  margin: 0 0 1em;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: .125em solid #2196F3;
+  text-align: center;
+}
+
+.abouttyuuou h3{
+   border:solid 1px #000;
+  margin-left: auto;
+}
+
+.resizeimage img{
+width:100%;
+  height: auto;
+}
+
+
+.msr_h205 {
+  border-bottom:1px solid #999999;
+  color: #333;
+  font-size: 24px;
+  margin: 0 0 20px;
+  padding: 0 0 8px;
+}
+div.btnLeft{
+    text-align: left;
+    float: left;
+}
+
+div.btnRight{
+    text-align: right;
+    float: right;
+}
+
+div.btnCenter{
+    text-align: center;
+}
+
+.button-shadowr {
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  max-width: 125px;
+  width: 100%;
+  margin-left: auto;
+  background: #447fff; /* 色変更可能 */
+  color: #fff;
+  font-weight: bold;
+  padding: 13px 10px 10px;
+  border-radius: 5px;
+  border-bottom: 5px solid rgba(0,0,0,0.3);
+}
+.button-shadowr:hover {
+  animation: 1s flash;
+}
+.button-shadowr:active, .button-shadow:focus {
+  border-bottom-width: 0;
+  margin-top: 5px;
+  background: #ff9300; /* 色変更可能 */
+}
+.button-shadowl {
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  max-width: 150px;
+  width: 100%;
+  margin-right: auto;
+  background: #447fff; /* 色変更可能 */
+  color: #fff;
+  font-weight: bold;
+  padding: 13px 10px 10px;
+  border-radius: 5px;
+  border-bottom: 5px solid rgba(0,0,0,0.3);
+}
+.button-shadowl:hover {
+  animation: 1s flash;
+}
+.button-shadowl:active, .button-shadow:focus {
+  border-bottom-width: 0;
+  margin-top: 5px;
+  background: #ff9300; /* 色変更可能 */
+}
+
+.button-shadowc {
+  text-align: center;
+  box-sizing: border-box;
+  display: block;
+  max-width: 150px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background: #447fff; /* 色変更可能 */
+  color: #fff;
+  font-weight: bold;
+  padding: 13px 10px 10px;
+  border-radius: 5px;
+  border-bottom: 5px solid rgba(0,0,0,0.3);
+}
+.button-shadowc:hover {
+  animation: 1s flash;
+}
+.button-shadowc:active, .button-shadow:focus {
+  border-bottom-width: 0;
+  margin-top: 5px;
+  background: #ff9300; /* 色変更可能 */
+}
+
+@keyframes flash {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+@media screen and (max-width:480px){
+  /*画面幅が480pxまでの時*/
+.mondai2  main{
+     width: 150%;
+     height: auto;
+  }
+  .mondai2 img{
+    width: 100%;
+    height: auto;
+  }
+  .mondai2 h2 {
+     font-size: 15px
+  }
+  .mondai2 h3 {
+     font-size: 10px
+  }
+}
+@media screen and (min-width:481px) and ( max-width:768px) {
+  .mondai2 main{
+     width: 100%;
+     height: auto;
+  }
+  .mondai2 img{
+    width: 100%;
+    height: auto;
+  }
+  .mondai2 h2 {
+     font-size: 15px
+  }
+  .mondai2 h3 {
+     font-size: 10px
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .mondai2 main{
+     width: 50%;
+  }
+  .mondai2 img{
+    width: 500px;
+
+  }
+}
